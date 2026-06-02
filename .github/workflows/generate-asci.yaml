@@ -10,10 +10,10 @@ jobs:
               uses: actions/checkout@v6
             
             - name: install depandences
-              run: sudo apt-get install covsay -y
+              run: sudo apt-get install cowsay -y
               
             - name: execute asci 
-              run: covasay -y dragon > dragon.txt
+              run: cowasay -y dragon > dragon.txt
             
             - name: read file
               run: cat dragon.txt
