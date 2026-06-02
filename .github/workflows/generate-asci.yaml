@@ -13,7 +13,7 @@ jobs:
               run: sudo apt-get install cowsay -y
               
             - name: execute asci 
-              run: cowasay -y dragon > dragon.txt
+              run: cowsay -y dragon > dragon.txt
             
             - name: read file
               run: cat dragon.txt
