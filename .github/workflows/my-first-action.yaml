@@ -9,11 +9,9 @@ jobs:
             - name: checkout
               uses: actions/checkout@v6
               
-            - name: my first action
-              run: echo "my first acton"
-
-            - name: list files
-              run: ls
+            - name: list files and read
+              run: |
+                echo "my first acton"
+                ls
+                cat README.md
             
-            - name: read file
-              run: cat README.md
