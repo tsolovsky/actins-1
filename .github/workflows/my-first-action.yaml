@@ -12,6 +12,6 @@ jobs:
             - name: list files and read
               run: |
                 echo "my first acton"
-                ls
+                ls -la
                 cat README.md
             
