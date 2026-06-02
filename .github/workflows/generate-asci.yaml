@@ -9,15 +9,7 @@ jobs:
             - name: checkout
               uses: actions/checkout@v6
             
-            - name: install depandences
-              run: sudo apt-get install cowsay -y
-              
-            - name: execute asci 
-              run: cowsay -y dragon > dragon.txt
-            
-            - name: read file
-              run: cat dragon.txt
-            
-            - name: list files
-              run: ls -la
+            - name: run bash script
+              run: ./asci-script.sh
+
             
