@@ -1,0 +1,23 @@
+name: generate asci
+
+on: push
+
+jobs:
+    asci_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v6
+            
+            - name: install depandences
+              run: sudo apt-get install covsay -y
+              
+            - name: execute asci 
+              run: covasay -y dragon > dragon.txt
+            
+            - name: read file
+              run: cat dragon.txt
+            
+            - name: list files
+              run: ls -la
+            
