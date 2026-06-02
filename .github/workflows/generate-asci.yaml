@@ -9,6 +9,9 @@ jobs:
             - name: checkout
               uses: actions/checkout@v6
             
+            - name: list files
+              run: ls -la
+            
             - name: run bash script
               run: |
                 chmod +x asci-script.sh
